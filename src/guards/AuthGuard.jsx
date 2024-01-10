@@ -12,8 +12,8 @@ export function AuthGuard({ children }) {
   const accessToken = Cookies.get("accessToken");
 
   if (!accessToken) {
-    return location.pathname !== "/signin" ? (
-      <Navigate to="/signin" state={{ from: location }} replace />
+    return location.pathname !== "/" ? (
+      <Navigate to="/" state={{ from: location }} replace />
     ) : (
       <Login />
     );

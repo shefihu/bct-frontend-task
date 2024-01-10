@@ -1,5 +1,11 @@
+import ActivityCards from "../ActivityCards";
+
 const Pending = () => {
-  return <div>Pending</div>;
+  return (
+    <div>
+      <ActivityCards />
+    </div>
+  );
 };
 
 export default Pending;
