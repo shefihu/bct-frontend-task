@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.gradient-text {
+  background: var(
+    --Gradient,
+    linear-gradient(180deg, #0592f6 0%, #0376c7 99.44%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.signin-button {
+  border-radius: 5px;
+  background: linear-gradient(180deg, #0592f6 0%, #0376c7 99.44%);
+  box-shadow: 0px 10px 42px -5px rgba(4, 54, 89, 0.33);
+}
